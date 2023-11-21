@@ -1,10 +1,19 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+:root {
+  --komika-hand: 'Croissant One', sans-seriff;
+}
 
 body {
   min-height: 100vh;
   background: linear-gradient(rgba(24, 24, 72, 1), rgba(24, 24, 72, 0.7)), url('/src/assets/5172658.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.primary-font {
+  font-family: var(--komika-hand);
 }
