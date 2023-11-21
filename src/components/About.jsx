@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div>
+    <div className="ml-[100px]">
       <h1>Hello World!</h1>
     </div>
   );
