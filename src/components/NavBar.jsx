@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import logo from '../assets/ms-sin-fondo.png';
+import logo from '../assets/logo.png';
 
 const NavBar = () => {
   const location = useLocation();
@@ -17,8 +17,8 @@ const NavBar = () => {
           </ul>
         </nav>
       </div>
-      <div className="absolute top-0 h-full flex flex-col justify-between items-center pb-[10px]">
-        <img src={logo} className="w-[100px]" />
+      <div className="absolute top-0 h-full flex flex-col justify-between items-center pb-[10px] pt-[30px]">
+        <img src={logo} className="w-[200px] pl-[10px]" />
         <div className="flex flex-col gap-9 text-3xl text-white">
           <a href="mailto:manuelsanchez059@gmail.com" target="_blank" rel="noreferrer">
             <BiLogoGmail />
