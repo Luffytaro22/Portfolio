@@ -5,7 +5,7 @@ import { IoMenu, IoClose, IoPerson } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
 import { RiContactsBookFill } from "react-icons/ri";
 import { GoTriangleLeft } from "react-icons/go";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
@@ -13,6 +13,20 @@ const NavBar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [menu, setMenu] = useState(false);
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+  // Find the right width when the window resize.
+  useEffect(() => {
+    const handleResize = () => {
+      setwindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const showHideMenu = () => {
     if (menu) {
@@ -29,12 +43,13 @@ const NavBar = () => {
 
   return (
     <>
-      { !menu && <div className="w-full flex justify-between items-center fixed top-0 text-3xl text-white px-[20px]">
+      { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 text-3xl text-white px-[20px] lg:hidden">
         <IoMenu onClick={showHideMenu} />
         <img src={logo} className="w-[200px] pl-[10px]" />
       </div>}
-      { menu && <div className="w-3/4 max-w-xs flex flex-col h-screen justify-between fixed top-0 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu" id="menu-bar">
-        <IoClose onClick={showHideMenu} className="text-3xl" />
+      { (menu || windowWidth >= 1024) && <div className="w-3/4 max-w-[13rem] flex flex-col h-screen justify-between fixed top-0 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu lg:animate-none lg:bg-none" id="menu-bar">
+        <IoClose onClick={showHideMenu} className="text-3xl lg:hidden" />
+        <img src={logo} className="w-[200px] pl-[10px] hidden lg:block" />
         <nav>
           <ul className="flex flex-col justify-center h-[100px] items-center gap-9 pr-9 text-white primary-font">
             { location.pathname === "/" ? (

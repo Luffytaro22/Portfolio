@@ -19,5 +19,5 @@ body {
 }
 
 .align-menu {
-  @apply flex items-center gap-[10px] text-lg;
+  @apply flex items-center gap-[10px] text-lg cursor-pointer;
 }
