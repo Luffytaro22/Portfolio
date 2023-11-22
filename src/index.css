@@ -17,3 +17,7 @@ body {
 .primary-font {
   font-family: var(--komika-hand);
 }
+
+.align-menu {
+  @apply flex items-center gap-[10px] text-lg;
+}
