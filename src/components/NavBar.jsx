@@ -43,7 +43,7 @@ const NavBar = () => {
 
   return (
     <>
-      { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 text-3xl text-white px-[20px] lg:hidden">
+      { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 text-3xl text-white px-[20px] backdrop-blur-sm lg:hidden">
         <IoMenu onClick={showHideMenu} />
         <img src={logo} className="w-[200px] pl-[10px]" />
       </div>}
