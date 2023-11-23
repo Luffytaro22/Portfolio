@@ -2,9 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
 :root {
   --komika-hand: 'Croissant One', sans-seriff;
+  --comic-neue: 'Comic Neue', cursive, sans-seriff;
 }
 
 body {
@@ -18,6 +20,34 @@ body {
   font-family: var(--komika-hand);
 }
 
+.secondary-font {
+  font-family: var(--comic-neue);
+}
+
 .align-menu {
   @apply flex items-center gap-[10px] text-lg cursor-pointer;
+}
+
+#stack-container > div {
+  @apply max-w-lg bg-stackBackground p-3 rounded-lg shadow-lg shadow-black;
+}
+
+#stack-container h4 {
+  @apply text-2xl pb-2 font-bold;
+}
+
+.grid-layout {
+  @apply grid grid-cols-3 content-center gap-2;
+}
+
+.grid-layout > span {
+  @apply flex flex-col items-center justify-center border-2 border-black rounded-lg p-1 gap-2;
+}
+
+.grid-layout > span:nth-child(even) {
+  @apply bg-[#181848];
+}
+
+.grid-layout > span:nth-child(odd) {
+  @apply bg-[#304878];
 }
