@@ -1,6 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import { BiLogoGmail } from "react-icons/bi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMenu, IoClose, IoPerson } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
 import { RiContactsBookFill } from "react-icons/ri";
@@ -8,6 +6,7 @@ import { GoTriangleLeft } from "react-icons/go";
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import ContactLinks from './subcomponents/ContactLinks';
 
 const NavBar = () => {
   const location = useLocation();
@@ -105,17 +104,7 @@ const NavBar = () => {
             }
           </ul>
         </nav>
-        <div className="flex gap-9 text-3xl text-white self-center">
-          <a href="mailto:manuelsanchez059@gmail.com" target="_blank" rel="noreferrer">
-            <BiLogoGmail />
-          </a>
-          <a href="https://github.com/Luffytaro22" target="_blank" rel="noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra/" target="_blank" rel="noreferrer">
-            <FaLinkedin />
-          </a>
-        </div>
+        <ContactLinks />
       </div>}
     </>
   );
