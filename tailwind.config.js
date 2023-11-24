@@ -9,6 +9,9 @@ export default {
       backgroundColor: {
         stackBackground: 'rgba(0, 0, 0, 0.5)',
       },
+      transitionProperty: {
+        'about-menu': 'opacity 0.5s, transform 0.5s;',
+      },
       keyframes: {
         'show-menu': {
           '0%': { transform: 'translatex(-100%)' },
@@ -20,10 +23,22 @@ export default {
           '50%': { transform: 'translatex(-50%)' },
           '100%': { transform: 'translatex(-100%)' },
         },
+        'hover-stacks': {
+          '0%': { background: 'inherit' },
+          '50%': { transform: 'scale(0.9)' },
+          '100%': { background: '#00510C' },
+        },
+        'hover-links': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' },
+        }
       },
       animation: {
         'show-menu': 'show-menu 0.5s linear forwards',
         'hide-menu': 'hide-menu 0.5s linear forwards',
+        'hover-stacks': 'hover-stacks 0.5s linear forwards',
+        'hover-links': 'hover-links 0.5s linear infinite',
       },
     },
   },

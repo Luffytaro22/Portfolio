@@ -49,7 +49,25 @@ body {
 }
 
 .grid-layout > span:nth-child(odd) {
-  @apply bg-[#304878];
+  @apply bg-black;
+}
+
+.grid-layout > span:hover {
+  @apply animate-hover-stacks;
+}
+
+#about-container,
+#front-end-container,
+#back-end-container,
+#technologies-container {
+  @apply opacity-0 translate-y-[20px] transition-about-menu;
+}
+
+#about-container.animate,
+#front-end-container.animate,
+#back-end-container.animate,
+#technologies-container.animate {
+  @apply opacity-[1] translate-y-0;
 }
 
 @media only screen and (min-width: 1280px) {
