@@ -29,7 +29,7 @@ body {
 }
 
 #stack-container > div {
-  @apply max-w-lg bg-stackBackground p-3 rounded-lg shadow-lg shadow-black;
+  @apply max-w-xs bg-stackBackground p-3 rounded-lg shadow-lg shadow-black;
 }
 
 #stack-container h4 {
@@ -41,7 +41,7 @@ body {
 }
 
 .grid-layout > span {
-  @apply flex flex-col items-center justify-center border-2 border-black rounded-lg p-1 gap-2;
+  @apply flex flex-col items-center justify-center rounded-lg p-1 gap-2;
 }
 
 .grid-layout > span:nth-child(even) {
@@ -50,4 +50,10 @@ body {
 
 .grid-layout > span:nth-child(odd) {
   @apply bg-[#304878];
+}
+
+@media only screen and (min-width: 1280px) {
+  body {
+    overflow: hidden;
+  }
 }
