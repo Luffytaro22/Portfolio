@@ -1,19 +1,30 @@
 import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaLinkedin } from "react-icons/fa";
 import { SiRedux, SiTailwindcss, SiRubyonrails, SiWebpack, SiVisualstudiocode } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoGmail } from "react-icons/bi";
 import { FaGitAlt, FaGithub } from "react-icons/fa6";
 
 const About = () => {
   return (
-    <div className="mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col xl:flex-row xl:gap-4 justify-center items-center">
-      <div className="max-w-md">
+    <div className="mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col gap-12 xl:flex-row xl:gap-4 justify-center items-center">
+      <div className="max-w-md" id="about-container">
         <h1 className="primary-font text-2xl">Hello World!</h1>
         <h2 className="primary-font text-3xl text-green-500">I&apos;m Manuel Sánchez</h2>
         <h3 className="secondary-font italic">UX/UI Front-end Web developer</h3><br />
         <p className="secondary-font">I&apos;m a junior developer with experience working both in front-end and back-end.</p><br />
         <p className="secondary-font">I enjoy making good-looking and functional applications paying special attention to the user experience, and writing clean and readable code.</p><br />
+        <div className="flex gap-9 text-3xl text-white justify-center">
+          <a href="mailto:manuelsanchez059@gmail.com" target="_blank" rel="noreferrer">
+            <BiLogoGmail />
+          </a>
+          <a href="https://github.com/Luffytaro22" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/manuel-alejandro-sanchez-sierra/" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
       <div className="flex flex-col items-center">
         <h3 className="primary-font text-2xl underline text-green-500">My stack</h3>
@@ -76,7 +87,7 @@ const About = () => {
                 <p>Git</p>
               </span>
               <span>
-                <FaGithub className="text-[#181717] text-3xl" />
+                <FaGithub className="text-white text-3xl" />
                 <p>GitHub</p>
               </span>
               <span>

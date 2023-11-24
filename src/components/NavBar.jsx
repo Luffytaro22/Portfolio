@@ -43,11 +43,11 @@ const NavBar = () => {
 
   return (
     <>
-      { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 text-3xl text-white px-[20px] backdrop-blur-sm lg:hidden">
+      { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 z-40 text-3xl text-white px-[20px] backdrop-blur-sm lg:hidden">
         <IoMenu onClick={showHideMenu} />
         <img src={logo} className="w-[200px] pl-[10px]" />
       </div>}
-      { (menu || windowWidth >= 1024) && <div className="w-3/4 max-w-[13rem] flex flex-col h-screen justify-between fixed top-0 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu lg:animate-none lg:bg-none" id="menu-bar">
+      { (menu || windowWidth >= 1024) && <div className="w-3/4 max-w-[13rem] flex flex-col h-screen justify-between fixed top-0 z-50 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu lg:animate-none lg:bg-none" id="menu-bar">
         <IoClose onClick={showHideMenu} className="text-3xl lg:hidden" />
         <img src={logo} className="w-[200px] pl-[10px] hidden lg:block" />
         <nav>

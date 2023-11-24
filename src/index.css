@@ -56,4 +56,8 @@ body {
   body {
     overflow: hidden;
   }
+
+  #about-container {
+    @apply text-justify;
+  }
 }
