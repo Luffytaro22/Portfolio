@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react'; 
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaCss3Alt, FaReact, FaSass} from "react-icons/fa";
 import { SiRedux, SiTailwindcss, SiRubyonrails, SiWebpack, SiVisualstudiocode } from "react-icons/si";
@@ -44,11 +45,11 @@ const About = () => {
   window.addEventListener('scroll', handleScroll);
   window.addEventListener('load', handleScroll);
 
-  if (location.pathname === "/") {
+  useEffect(() => {
     setTimeout(() => {
       handleScroll();
     }, 200);
-  }
+  }, [location]);
 
   return (
     <div className="mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col gap-12 xl:flex-row xl:gap-4 justify-center items-center">
