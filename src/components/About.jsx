@@ -13,6 +13,7 @@ const About = () => {
   
   // Function to check if the element is in the window view.
   const isElementInViewport = (element) => {
+    if (!element) return;
       const rect = element.getBoundingClientRect();
       return (
           rect.top >= 0 &&
@@ -46,9 +47,7 @@ const About = () => {
   window.addEventListener('load', handleScroll);
 
   useEffect(() => {
-    setTimeout(() => {
-      handleScroll();
-    }, 200);
+    handleScroll();
   }, [location]);
 
   return (
