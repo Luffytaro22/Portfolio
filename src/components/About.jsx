@@ -7,19 +7,10 @@ import { DiRuby } from "react-icons/di";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaGitAlt, FaGithub } from "react-icons/fa6";
 import ContactLinks from './subcomponents/ContactLinks';
+import isElementInViewport from '../modules/isElementInViewport';
 
 const About = () => {
   const location = useLocation();
-  
-  // Function to check if the element is in the window view.
-  const isElementInViewport = (element) => {
-    if (!element) return;
-      const rect = element.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-      );
-  }
 
   // Function to handle the transitions based on the scroll.
   const handleScroll = () => {
