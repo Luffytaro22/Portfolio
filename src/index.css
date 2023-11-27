@@ -4,9 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #181848;
+  border-radius: 10px;
+}
+
 :root {
   --komika-hand: 'Croissant One', sans-seriff;
   --comic-neue: 'Comic Neue', cursive, sans-seriff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body {
