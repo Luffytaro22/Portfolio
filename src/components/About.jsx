@@ -51,7 +51,7 @@ const About = () => {
   }, [location]);
 
   return (
-    <div className="mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col gap-12 xl:flex-row xl:gap-4 justify-center items-center">
+    <div className="min-h-screen mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col gap-12 xl:flex-row xl:gap-4 justify-center items-center">
       <div className="max-w-md" id="about-container">
         <h1 className="primary-font text-2xl">Hello World!</h1>
         <h2 className="primary-font text-3xl text-green-500">I&apos;m Manuel Sánchez</h2>
