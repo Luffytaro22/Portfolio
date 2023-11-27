@@ -32,6 +32,10 @@ body {
   @apply max-w-xs bg-stackBackground p-3 rounded-lg shadow-lg shadow-black;
 }
 
+#works-container > div {
+  @apply bg-stackBackground rounded-lg shadow-lg shadow-black;
+}
+
 #stack-container h4 {
   @apply text-2xl pb-2 font-bold;
 }
