@@ -14,6 +14,7 @@ const initialState = {
       'link': 'https://rent-eaze.onrender.com/',
       'github': 'https://github.com/Luffytaro22/final-capstone-front-end',
       'image': rentEaze,
+      'tech': ['React.js', 'Redux', 'TailwindCSS', 'Ruby on Rails', 'JavaScript', 'Ruby', 'PostgreSQL'],
     },
     {
       'name': 'easyCook',
@@ -21,6 +22,7 @@ const initialState = {
       'link': 'https://recipe-app-zxdn.onrender.com/',
       'github': 'https://github.com/Luffytaro22/Recipe-app',
       'image': easyCook,
+      'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
     },
     {
       'name': 'Budget --track',
@@ -28,6 +30,7 @@ const initialState = {
       'link': 'https://budget-app-8wpl.onrender.com/',
       'github': 'https://github.com/Luffytaro22/Budget-app',
       'image': BudgetTrack,
+      'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
     },
     {
       'name': 'Japanese Culture Festival',
@@ -35,6 +38,7 @@ const initialState = {
       'link': 'https://luffytaro22.github.io/Capstone-Japan/',
       'github': 'https://github.com/Luffytaro22/Capstone-Japan',
       'image': japanFestival,
+      'tech': ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
     },
     {
       'name': 'TV Shows',
@@ -42,6 +46,7 @@ const initialState = {
       'link': 'https://demesameneshoa.github.io/JavaScript-Capstone/',
       'github': 'https://github.com/Luffytaro22/JavaScript-Capstone',
       'image': tvShows,
+      'tech': ['HTML5', 'CSS3', 'JavaScript', 'Webpack'],
     },
     {
       'name': 'Todo List',
@@ -49,6 +54,7 @@ const initialState = {
       'link': 'https://luffytaro22.github.io/To-do-list/',
       'github': 'https://github.com/Luffytaro22/To-do-list',
       'image': todoList,
+      'tech': ['HTML5', 'CSS3', 'JavaScript', 'Webpack'],
     }
   ]
 }
