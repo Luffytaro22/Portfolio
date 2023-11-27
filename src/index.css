@@ -56,7 +56,12 @@ body {
   @apply bg-black;
 }
 
-.grid-layout > span:hover {
+.tech-stacks {
+  @apply bg-black py-1 px-2 rounded-md;
+}
+
+.grid-layout > span:hover,
+.tech-stacks:hover {
   @apply animate-hover-stacks;
 }
 
@@ -74,12 +79,22 @@ body {
   @apply opacity-[1] translate-y-0;
 }
 
-@media only screen and (min-width: 1280px) {
-  body {
-    overflow: hidden;
-  }
+.works-links {
+  @apply flex justify-center items-center gap-2 hover:animate-hover-links;
+}
 
+@media only screen and (min-width: 1280px) {
   #about-container {
     @apply text-justify;
+  }
+
+  #works-container {
+    @apply grid-cols-2;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  #works-container {
+    @apply grid-cols-3;
   }
 }
