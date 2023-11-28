@@ -13,6 +13,16 @@ export default {
         'about-menu': 'opacity 0.5s, transform 0.5s;',
       },
       keyframes: {
+        'show-message': {
+          '0%': { transform: 'translatey(-100%)' },
+          '50%': { transform: 'translatey(-50%)' },
+          '100%': { transform: 'translatey(0)' },
+        },
+        'hide-message': {
+          '0%': { transform: 'translatey(0)' },
+          '50%': { transform: 'translatey(-50%)' },
+          '100%': { transform: 'translatey(-110%)' },
+        },
         'show-menu': {
           '0%': { transform: 'translatex(-100%)' },
           '50%': { transform: 'translatex(-50%)' },
@@ -35,6 +45,8 @@ export default {
         }
       },
       animation: {
+        'show-message': 'show-message 0.3s linear forwards',
+        'hide-message': 'hide-message 0.3s linear forwards',
         'show-menu': 'show-menu 0.5s linear forwards',
         'hide-menu': 'hide-menu 0.5s linear forwards',
         'hover-stacks': 'hover-stacks 0.5s linear forwards',
