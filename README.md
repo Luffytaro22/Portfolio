@@ -59,7 +59,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a id="live-demo"></a>
-[Live Demo](https://portfolio-omega-six-77.vercel.app/)
+[Live Demo](https://portfolio-luffytaro22.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +93,7 @@ npm run dev
 ```
 
 ### Deployment
-You can deploy this project using [this link](https://portfolio-omega-six-77.vercel.app/)
+You can deploy this project using [this link](https://portfolio-luffytaro22.vercel.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
