@@ -12,6 +12,9 @@ export default {
       transitionProperty: {
         'about-menu': 'opacity 0.5s, transform 0.5s;',
       },
+      boxShadow: {
+        'submit-button': '2px 2px 1px 1px rgb(34, 197, 94);',
+      },
       keyframes: {
         'show-message': {
           '0%': { transform: 'translatey(-100%)' },
@@ -42,6 +45,19 @@ export default {
           '0%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.1)' },
           '100%': { transform: 'scale(1)' },
+        },
+        'focus-input': {
+          '50%': { opacity: '0.5' },
+        },
+        'show-contact': {
+          '0%': { 
+            transform: 'translatey(20px)',
+            opacity: '0',
+          },
+          '100%': { 
+            transform: 'translatey(0)',
+            opacity: '1',
+          },
         }
       },
       animation: {
@@ -51,6 +67,8 @@ export default {
         'hide-menu': 'hide-menu 0.5s linear forwards',
         'hover-stacks': 'hover-stacks 0.5s linear forwards',
         'hover-links': 'hover-links 0.5s linear infinite',
+        'focus-input': 'focus-input 1s ease-in-out forwards',
+        'show-contact': 'show-contact 0.2s linear forwards',
       },
     },
   },
