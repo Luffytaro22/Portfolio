@@ -103,6 +103,22 @@ body {
   @apply flex justify-center items-center gap-2 hover:animate-hover-links;
 }
 
+.formInputs {
+  @apply w-[80%] max-w-[20rem] bg-transparent secondary-font text-white rounded-md py-2 px-4 border-b-2 border-green-500;
+}
+
+.formInputs::placeholder {
+  @apply text-white;
+}
+
+.formInputs:focus {
+  @apply outline-0 animate-focus-input;
+}
+
+.submit-button {
+  @apply secondary-font shadow-submit-button py-1 px-4 rounded-md border-2 border-green-500;
+}
+
 @media only screen and (min-width: 1280px) {
   #about-container {
     @apply text-justify;
