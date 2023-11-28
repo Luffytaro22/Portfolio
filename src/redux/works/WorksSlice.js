@@ -18,7 +18,7 @@ const initialState = {
     },
     {
       'name': 'easyCook',
-      'description': 'A web application build on Ruby on Rails and TailwindCSS that allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+      'description': 'A web application built on Ruby on Rails and TailwindCSS that allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
       'link': 'https://recipe-app-zxdn.onrender.com/',
       'github': 'https://github.com/Luffytaro22/Recipe-app',
       'image': easyCook,
@@ -26,7 +26,7 @@ const initialState = {
     },
     {
       'name': 'Budget --track',
-      'description': 'A mobile web application build on Ruby on Rails where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+      'description': 'A mobile web application built on Ruby on Rails where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
       'link': 'https://budget-app-8wpl.onrender.com/',
       'github': 'https://github.com/Luffytaro22/Budget-app',
       'image': BudgetTrack,
