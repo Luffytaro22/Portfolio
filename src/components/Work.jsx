@@ -6,7 +6,7 @@ const Work = () => {
   const works = useSelector((state) => state.works.works);
 
   return (
-    <div className="mt-14 text-center text-white px-2 lg:ml-[13rem]">
+    <div className="mt-14 text-center text-white px-2 lg:ml-[13rem] animate-show-contact">
         <h2 className="primary-font text-2xl underline text-green-500">My Projects</h2>
         <div className="grid justify-items-center items-start gap-12 py-8" id="works-container">
           {works.map((work, index) =>
