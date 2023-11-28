@@ -44,11 +44,11 @@ const NavBar = () => {
     <>
       { (!menu && windowWidth < 1024) && <div className="w-full flex justify-between items-center fixed top-0 z-40 text-3xl text-white px-[20px] backdrop-blur-sm lg:hidden">
         <IoMenu onClick={showHideMenu} />
-        <a href="https://portfolio-n5odstci4-luffytaro22.vercel.app/"><img src={logo} className="w-[200px] pl-[10px]" /></a>
+        <a href="https://portfolio-luffytaro22.vercel.app/"><img src={logo} className="w-[200px] pl-[10px]" /></a>
       </div>}
       { (menu || windowWidth >= 1024) && <div className="w-3/4 max-w-[13rem] flex flex-col h-screen justify-between fixed top-0 z-50 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu lg:animate-none lg:bg-none" id="menu-bar">
         <IoClose onClick={showHideMenu} className="text-3xl lg:hidden" />
-        <a href="https://portfolio-n5odstci4-luffytaro22.vercel.app/"><img src={logo} className="w-[200px] pl-[10px] hidden lg:block" /></a>
+        <a href="https://portfolio-luffytaro22.vercel.app/"><img src={logo} className="w-[200px] pl-[10px] hidden lg:block" /></a>
         <nav>
           <ul className="flex flex-col justify-center h-[100px] items-center gap-9 pr-9 text-white primary-font">
             { location.pathname === "/" ? (
