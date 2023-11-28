@@ -104,7 +104,7 @@ body {
 }
 
 .formInputs {
-  @apply w-[80%] max-w-[20rem] bg-transparent secondary-font text-white rounded-md py-2 px-4 border-b-2 border-green-500;
+  @apply w-[80%] max-w-[30rem] bg-transparent secondary-font text-white rounded-md py-2 px-4 border-b-2 border-green-500;
 }
 
 .formInputs::placeholder {
@@ -117,6 +117,10 @@ body {
 
 .submit-button {
   @apply secondary-font shadow-submit-button py-1 px-4 rounded-md border-2 border-green-500;
+}
+
+.notice-alert {
+  @apply fixed top-[3rem] left-0 right-0 text-center text-white primary-font mx-auto max-w-[30rem] z-40 rounded-2xl py-2;
 }
 
 @media only screen and (min-width: 1280px) {

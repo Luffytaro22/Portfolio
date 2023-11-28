@@ -17,14 +17,14 @@ export default {
       },
       keyframes: {
         'show-message': {
-          '0%': { transform: 'translatey(-100%)' },
+          '0%': { transform: 'translatey(-200%)' },
           '50%': { transform: 'translatey(-50%)' },
           '100%': { transform: 'translatey(0)' },
         },
         'hide-message': {
           '0%': { transform: 'translatey(0)' },
           '50%': { transform: 'translatey(-50%)' },
-          '100%': { transform: 'translatey(-110%)' },
+          '100%': { transform: 'translatey(-200%)' },
         },
         'show-menu': {
           '0%': { transform: 'translatex(-100%)' },

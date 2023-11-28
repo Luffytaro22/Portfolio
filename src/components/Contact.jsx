@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen justify-center text-center text-white lg:ml-[13rem] animate-show-contact">
+    <div className="flex flex-col min-h-screen justify-center text-center text-white lg:ml-[13rem] animate-show-contact mt-14">
       <h2 className="primary-font text-2xl underline text-green-500">Contact me</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="mt-10 flex flex-col gap-6 items-center">
         <input

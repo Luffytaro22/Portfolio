@@ -34,7 +34,7 @@ const NoticeAlert = () => {
 
   return (
     <>
-      {notice && <p className="notice bg-emerald-950 notice-alert animate-show-message">{notice}</p>}
+      {notice && <p className="notice bg-green-500 notice-alert animate-show-message">{notice}</p>}
       {error && <p className="alert bg-red-950 notice-alert animate-show-message">{error}</p>}
     </>
   );
