@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react'; 
+import { TypeAnimation } from 'react-type-animation';
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaHtml5, FaCss3Alt, FaReact, FaSass} from "react-icons/fa";
 import { SiRedux, SiTailwindcss, SiRubyonrails, SiWebpack, SiVisualstudiocode } from "react-icons/si";
@@ -44,7 +45,41 @@ const About = () => {
   return (
     <div className="min-h-screen mt-14 text-center text-white px-2 lg:ml-[13rem] flex flex-col gap-12 xl:flex-row xl:gap-4 justify-center items-center">
       <div className="max-w-md" id="about-container">
-        <h1 className="primary-font text-2xl">Hello World!</h1>
+        <TypeAnimation 
+          sequence={[
+            'Hello World!',
+            1000,
+            'Welcome!',
+            1000,
+            'Bienvenido!',
+            1000,
+            'Grata!',
+            1000,
+            'いらっしゃいませ',
+            1000,
+            '欢迎',
+            1000,
+            '환영',
+            1000,
+            'Benvenuto!',
+            1000,
+            'Accueillir!',
+            1000,
+            'Velkommen',
+            1000,
+            'स्वागत',
+            1000,
+            'اهلا',
+            1000,
+            'καλως ΗΡΘΑΤΕ',
+            1000
+          ]}
+          wrapper="h1"
+          speed={200}
+          className="primary-font text-2xl"
+          repeat={Infinity}
+          cursor={true}
+        />
         <h2 className="primary-font text-3xl text-green-500">I&apos;m Manuel Sánchez</h2>
         <h3 className="secondary-font italic">UX/UI Front-end Web developer</h3><br />
         <p className="secondary-font">I&apos;m a junior developer with experience working both in front-end and back-end.</p><br />
