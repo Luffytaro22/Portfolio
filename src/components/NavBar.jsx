@@ -27,7 +27,21 @@ const NavBar = () => {
     };
   }, []);
 
-  const showHideMenu = () => {
+  // Hide the NavBar when tapping outside of the element.
+  const hideNav = (event) => {
+    const container = document.getElementById('menu-bar');
+    if (event.target !== container) {
+      container.classList.remove('animate-show-menu');
+      container.classList.add('animate-hide-menu');
+      window.removeEventListener('click', hideNav);
+      setTimeout(() => {
+        setMenu(false);
+      }, 600);
+    }
+  };
+
+  const showHideMenu = (event) => {
+    event.stopPropagation();
     if (menu) {
       const menuBar = document.getElementById('menu-bar');
       menuBar.classList.remove('animate-show-menu');
@@ -37,6 +51,7 @@ const NavBar = () => {
       }, 600);
     } else {
       setMenu(true);
+      window.addEventListener('click', hideNav);
     }
   };
 
