@@ -49,8 +49,8 @@ const NavBar = () => {
       { (menu || windowWidth >= 1024) && <div className="w-3/4 max-w-[13rem] flex flex-col h-screen justify-between fixed top-0 z-50 pb-[20px] pt-[10px] pl-[20px] text-white bg-menuBackground animate-show-menu lg:animate-none lg:bg-none" id="menu-bar">
         <IoClose onClick={showHideMenu} className="text-3xl lg:hidden" />
         <a href="https://portfolio-manuel-sanchez.vercel.app/"><img src={logo} className="w-[200px] pl-[10px] hidden lg:block" /></a>
-        <nav>
-          <ul className="flex flex-col justify-center h-[100px] items-center gap-9 pr-9 text-white primary-font">
+        <nav className="m-auto">
+          <ul className="flex flex-col justify-center items-center gap-9 text-white primary-font">
             { location.pathname === "/" ? (
                 <li 
                   className="align-menu underline underline-offset-4 text-green-500"
