@@ -4,7 +4,7 @@ import easyCook from '../../assets/easyCook-banner.png';
 import japanFestival from '../../assets/japan-festival-banner.png';
 import tvShows from '../../assets/TVShows-banner.png';
 import BudgetTrack from '../../assets/Budget-track-banner.png';
-import todoList from '../../assets/Todo-banner.png';
+import skyBlog from '../../assets/SkyBlog-banner.png';
 
 const initialState = {
   works: [
@@ -41,6 +41,14 @@ const initialState = {
       'tech': ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
     },
     {
+      'name': 'SkyBlog',
+      'description': 'Blog App is an application that allows different users to log in, make posts, and comment and like other posts.',
+      'link': 'https://blog-app-efud.onrender.com/',
+      'github': 'https://github.com/Luffytaro22/Blog-App',
+      'image': skyBlog,
+      'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
+    },
+    {
       'name': 'TV Shows',
       'description': 'Is an application that fetches tv shows from TVMaze API and also has a feature of posting and fetching Likes, Comments and Reservations from an involvement API.',
       'link': 'https://demesameneshoa.github.io/JavaScript-Capstone/',
@@ -48,14 +56,6 @@ const initialState = {
       'image': tvShows,
       'tech': ['HTML5', 'CSS3', 'JavaScript', 'Webpack'],
     },
-    {
-      'name': 'Todo List',
-      'description': 'Todo List allows the user to enter a task and mark it as completed or not. It also lets removing the done tasks and save them in the local storage.',
-      'link': 'https://luffytaro22.github.io/To-do-list/',
-      'github': 'https://github.com/Luffytaro22/To-do-list',
-      'image': todoList,
-      'tech': ['HTML5', 'CSS3', 'JavaScript', 'Webpack'],
-    }
   ]
 }
 
