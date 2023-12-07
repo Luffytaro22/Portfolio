@@ -27,7 +27,7 @@ const initialState = {
     {
       'name': 'Budget --track',
       'description': 'A mobile web application built on Ruby on Rails where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-      'link': 'https://budget-app-8wpl.onrender.com/',
+      'link': 'https://budget--track-10214d6fe65e.herokuapp.com/',
       'github': 'https://github.com/Luffytaro22/Budget-app',
       'image': BudgetTrack,
       'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
@@ -43,7 +43,7 @@ const initialState = {
     {
       'name': 'SkyBlog',
       'description': 'Blog App is an application that allows different users to log in, make posts, and comment and like other posts.',
-      'link': 'https://blog-app-efud.onrender.com/',
+      'link': 'https://sky-blog-a2e76c0e5e5c.herokuapp.com/',
       'github': 'https://github.com/Luffytaro22/Blog-App',
       'image': skyBlog,
       'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
