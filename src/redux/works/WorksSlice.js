@@ -19,7 +19,7 @@ const initialState = {
     {
       'name': 'easyCook',
       'description': 'A web application built on Ruby on Rails and TailwindCSS that allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
-      'link': 'https://recipe-app-zxdn.onrender.com/',
+      'link': 'https://easycook-46924094854a.herokuapp.com/',
       'github': 'https://github.com/Luffytaro22/Recipe-app',
       'image': easyCook,
       'tech': ['Ruby', 'Ruby on Rails', 'PostgreSQL', 'CSS3'],
