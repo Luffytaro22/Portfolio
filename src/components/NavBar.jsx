@@ -73,7 +73,7 @@ const NavBar = () => {
                 >
                   <IoPerson />
                   About
-                  <GoTriangleLeft className="text-2xl" />
+                  <GoTriangleLeft className="text-2xl animate-triangle" />
                 </li>
                 
               ) : (
@@ -90,7 +90,7 @@ const NavBar = () => {
                 >
                   <MdOutlineWork />
                   Work
-                  <GoTriangleLeft className="text-2xl" />
+                  <GoTriangleLeft className="text-2xl animate-triangle" />
                 </li>
                 
               ) : (
@@ -107,7 +107,7 @@ const NavBar = () => {
                 >
                   <RiContactsBookFill />
                   Contact
-                  <GoTriangleLeft className="text-2xl" />
+                  <GoTriangleLeft className="text-2xl animate-triangle" />
                 </li>
                 
               ) : (
