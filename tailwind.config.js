@@ -58,6 +58,14 @@ export default {
             transform: 'translatey(0)',
             opacity: '1',
           },
+        },
+        'triangle': {
+          '0%, 100%': {
+            transform: 'translatex(-25%)',
+          },
+          '50%': {
+            transform: 'none'
+          },
         }
       },
       animation: {
@@ -69,6 +77,7 @@ export default {
         'hover-links': 'hover-links 0.5s linear infinite',
         'focus-input': 'focus-input 1s ease-in-out forwards',
         'show-contact': 'show-contact 0.2s linear forwards',
+        'triangle': 'triangle 1s linear infinite',
       },
     },
   },
